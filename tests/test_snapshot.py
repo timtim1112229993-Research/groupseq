@@ -1,14 +1,20 @@
 """Tests of the results snapshot on synthetic tables only."""
 from __future__ import annotations
 
-import dataclasses
-
 import numpy as np
 import pandas as pd
 import pytest
 
 from groupseq import provenance, snapshot, tables
-from groupseq.config import load_settings
+from groupseq.config import Settings
+
+
+def scratch_settings(root, pipeline: dict) -> Settings:
+    """Settings that live wholly in a temporary folder, so that no local path file is needed."""
+    return Settings(
+        pipeline=pipeline, paths={}, pipeline_dir=root, input_root=root / "input", work_dir=root / "work",
+        provenance_dir=root / "provenance",
+    )
 
 
 def test_tables_keep_column_order_and_write_missing_values_as_null():
@@ -18,10 +24,8 @@ def test_tables_keep_column_order_and_write_missing_values_as_null():
     assert out["rows"] == [["u", 1, 0.25, True], ["v", 2, None, False]]
 
 
-def test_a_copied_table_keeps_every_digit_of_its_source(tmp_path, monkeypatch):
-    settings = dataclasses.replace(
-        load_settings(), pipeline_dir=tmp_path, work_dir=tmp_path / "work", provenance_dir=tmp_path / "provenance"
-    )
+def test_a_copied_table_keeps_every_digit_of_its_source(tmp_path, monkeypatch, pipeline_config):
+    settings = scratch_settings(tmp_path, pipeline_config)
     values = [0.12357748905872215, 0.023155115329458784, 1 / 3, 2 / 3, 0.1 + 0.2, 1e-17, 123456.78901234567]
     frame = pd.DataFrame({"name": [f"r{i}" for i in range(len(values))], "value": values})
     path = settings.work_dir / "stage" / "numbers.csv"
@@ -51,8 +55,8 @@ def test_headline_tables_are_filtered_and_formatted():
         snapshot.render("Title", table, ["name", "absent"], None)
 
 
-def test_a_source_must_be_described_by_a_manifest(tmp_path):
-    settings = dataclasses.replace(load_settings(), pipeline_dir=tmp_path, provenance_dir=tmp_path / "provenance")
+def test_a_source_must_be_described_by_a_manifest(tmp_path, pipeline_config):
+    settings = scratch_settings(tmp_path, pipeline_config)
     path = tmp_path / "work" / "stage" / "table.csv"
     tables.write_csv(pd.DataFrame({"a": [1]}), path)
     digest = provenance.sha256_file(path)
