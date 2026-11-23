@@ -1,0 +1,32 @@
+# Inputs, intermediate tables and outputs stay in local restricted custody.
+# Only source code, configuration, environment specification, synthetic
+# demonstration data and run provenance may be tracked.
+
+# Stage outputs of every kind
+work/
+
+# Local paths and input folder names
+config/paths.local.json
+
+# Data, tables, figures, documents, model artefacts and logs, wherever they sit
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.docx
+*.log
+
+# Interpreter and test caches
+__pycache__/
+.pytest_cache/

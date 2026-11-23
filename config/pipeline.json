@@ -1,0 +1,747 @@
+{
+  "schema": 1,
+  "seed": 20261123,
+  "timezone_offset_hours": 8,
+  "raw_time_format": "%Y/%m/%d %H:%M:%S",
+  "classes": [
+    "A",
+    "B"
+  ],
+  "column_map": {
+    "agent_all": [
+      {
+        "raw": "\u8bb0\u5f55\u7c7b\u578b",
+        "name": "record_type"
+      },
+      {
+        "raw": "\u65f6\u95f4",
+        "name": "time"
+      },
+      {
+        "raw": "\u7ec4\u53f7",
+        "name": "group"
+      },
+      {
+        "raw": "\u7ec4\u540d",
+        "name": "group_name"
+      },
+      {
+        "raw": "\u9636\u6bb5",
+        "name": "stage"
+      },
+      {
+        "raw": "\u89e6\u53d1/\u4e8b\u4ef6",
+        "name": "trigger"
+      },
+      {
+        "raw": "\u52a8\u4f5c",
+        "name": "action"
+      },
+      {
+        "raw": "\u5b66\u751f\u95ee\u9898",
+        "name": "question"
+      },
+      {
+        "raw": "\u5c0f\u63a2\u56de\u590d",
+        "name": "reply"
+      },
+      {
+        "raw": "\u662f\u5426\u504f\u9898",
+        "name": "off_topic"
+      },
+      {
+        "raw": "\u6765\u6e90",
+        "name": "source"
+      },
+      {
+        "raw": "\u6d88\u606f",
+        "name": "message"
+      },
+      {
+        "raw": "\u8865\u5145\u8bf4\u660e",
+        "name": "note"
+      }
+    ],
+    "agent_logs": [
+      {
+        "raw": "\u65f6\u95f4",
+        "name": "time"
+      },
+      {
+        "raw": "\u7ec4\u53f7",
+        "name": "group"
+      },
+      {
+        "raw": "\u7ec4\u540d",
+        "name": "group_name"
+      },
+      {
+        "raw": "\u9636\u6bb5",
+        "name": "stage"
+      },
+      {
+        "raw": "\u89e6\u53d1\u65b9\u5f0f",
+        "name": "trigger"
+      },
+      {
+        "raw": "\u52a8\u4f5c",
+        "name": "action"
+      },
+      {
+        "raw": "\u6765\u6e90",
+        "name": "source"
+      },
+      {
+        "raw": "\u6c42\u52a9\u6b21\u6570",
+        "name": "help_count"
+      },
+      {
+        "raw": "\u5b8c\u6210\u9879",
+        "name": "items_done"
+      },
+      {
+        "raw": "\u603b\u9879",
+        "name": "items_total"
+      },
+      {
+        "raw": "\u6d88\u606f",
+        "name": "message"
+      },
+      {
+        "raw": "\u8bca\u65ad",
+        "name": "diagnosis"
+      }
+    ],
+    "process": [
+      {
+        "raw": "\u7ec4\u53f7",
+        "name": "group"
+      },
+      {
+        "raw": "\u7ec4\u540d",
+        "name": "group_name"
+      },
+      {
+        "raw": "\u9636\u6bb5",
+        "name": "stage"
+      },
+      {
+        "raw": "\u9636\u6bb5\u540d\u79f0",
+        "name": "stage_name"
+      },
+      {
+        "raw": "\u662f\u5426\u5b8c\u6210",
+        "name": "stage_complete"
+      },
+      {
+        "raw": "\u5b8c\u6210\u7387",
+        "name": "completion_pct"
+      },
+      {
+        "raw": "\u5b57\u6bb5",
+        "name": "field"
+      },
+      {
+        "raw": "\u5185\u5bb9",
+        "name": "content"
+      },
+      {
+        "raw": "\u6700\u540e\u66f4\u65b0",
+        "name": "updated"
+      }
+    ],
+    "groups": [
+      {
+        "raw": "\u7ec4\u53f7",
+        "name": "group"
+      },
+      {
+        "raw": "\u7ec4\u540d",
+        "name": "group_name"
+      },
+      {
+        "raw": "\u5f53\u524d\u9636\u6bb5",
+        "name": "current_stage"
+      },
+      {
+        "raw": "\u5b8c\u6210\u9636\u6bb5\u6570",
+        "name": "stages_completed"
+      },
+      {
+        "raw": "\u5e73\u5747\u5b8c\u6210\u7387",
+        "name": "mean_completion_pct"
+      },
+      {
+        "raw": "\u5c0f\u63a2\u6c42\u52a9",
+        "name": "help_clicks"
+      },
+      {
+        "raw": "\u7b54\u9519\u6b21\u6570",
+        "name": "quiz_errors"
+      },
+      {
+        "raw": "\u8bc1\u636e\u5b8c\u6574\u5ea6",
+        "name": "evidence_completeness"
+      },
+      {
+        "raw": "\u98ce\u9669\u6807\u7b7e",
+        "name": "risk_flag"
+      }
+    ],
+    "quiz_wrong": [
+      {
+        "raw": "\u65f6\u95f4",
+        "name": "time"
+      },
+      {
+        "raw": "\u7ec4\u53f7",
+        "name": "group"
+      },
+      {
+        "raw": "\u7ec4\u540d",
+        "name": "group_name"
+      },
+      {
+        "raw": "\u9636\u6bb5",
+        "name": "stage"
+      },
+      {
+        "raw": "\u677f\u5757",
+        "name": "block"
+      },
+      {
+        "raw": "\u4f5c\u7269",
+        "name": "crop"
+      },
+      {
+        "raw": "\u9898\u76ee",
+        "name": "item"
+      },
+      {
+        "raw": "\u5b57\u6bb5",
+        "name": "field"
+      },
+      {
+        "raw": "\u5b66\u751f\u7b54\u6848",
+        "name": "answer"
+      },
+      {
+        "raw": "\u6b63\u786e\u7b54\u6848",
+        "name": "correct"
+      }
+    ],
+    "inherited_events": [
+      {
+        "raw": "\u4e8b\u4ef6ID",
+        "name": "event_id"
+      },
+      {
+        "raw": "\u8bfe\u6b21",
+        "name": "class_label"
+      },
+      {
+        "raw": "\u7ec4\u53f7",
+        "name": "group"
+      },
+      {
+        "raw": "\u65f6\u95f4",
+        "name": "time"
+      },
+      {
+        "raw": "\u53d1\u8d77\u4e3b\u4f53",
+        "name": "initiator"
+      },
+      {
+        "raw": "\u5bf9\u8c61\u4e3b\u4f53",
+        "name": "target"
+      },
+      {
+        "raw": "\u5173\u7cfb",
+        "name": "relation"
+      },
+      {
+        "raw": "\u77e5\u8bc6\u5bf9\u8c61",
+        "name": "knowledge_object"
+      },
+      {
+        "raw": "\u63a2\u7a76\u9636\u6bb5",
+        "name": "stage"
+      },
+      {
+        "raw": "\u4e92\u52a8\u529f\u80fd",
+        "name": "function"
+      },
+      {
+        "raw": "\u8ba4\u77e5\u7ed3\u679c",
+        "name": "cognition"
+      },
+      {
+        "raw": "\u89e6\u53d1",
+        "name": "trigger"
+      },
+      {
+        "raw": "\u52a8\u4f5c\u539f\u7801",
+        "name": "action_raw"
+      },
+      {
+        "raw": "\u884c\u52a8\u7801",
+        "name": "action_code"
+      }
+    ]
+  },
+  "value_map": {
+    "record_type": {
+      "\u5c0f\u63a2\u51b3\u7b56": "DECISION",
+      "\u884c\u4e3a\u64cd\u4f5c": "OPERATION",
+      "\u5b66\u751f\u63d0\u95ee": "QUESTION"
+    },
+    "trigger": {
+      "idle": "IDLE",
+      "next_click": "NEXT",
+      "help_click": "HELP",
+      "\u505c\u7559\u89e6\u53d1": "DWELL",
+      "\u70b9\u51fb\u6c42\u52a9": "HELP_OP",
+      "\u811a\u624b\u67b6\u64cd\u4f5c": "SCAFFOLD_OP",
+      "\u81ea\u52a8\u63d0\u9192": "REMINDER",
+      "\u63d0\u95ee": "ASK"
+    },
+    "yes_no": {
+      "\u662f": "yes",
+      "\u5426": "no"
+    },
+    "risk_flag": {
+      "\u9891\u7e41\u6c42\u52a9": "frequent_help",
+      "\u8bc1\u636e\u4e0d\u8db3": "insufficient_evidence"
+    },
+    "inherited_code": {
+      "\u6c42\u52a9": "HELP",
+      "\u63d0\u793a\u540e\u56de\u5e94": "POST_PROMPT_RESPONSE",
+      "\u667a\u80fd\u4f53\u8ffd\u95ee": "AGENT_PROBE",
+      "\u7a0b\u5e8f\u6267\u884c": "PROCEDURE",
+      "\u4e3b\u52a8\u63d0\u95ee": "ACTIVE_QUESTION",
+      "\u8bc1\u636e\u6bd4\u8f83": "EVIDENCE_COMPARISON",
+      "\u63d0\u793a": "PROMPT",
+      "\u652f\u67b6\u64a4\u9664": "SCAFFOLD_RELEASE",
+      "\u89e3\u91ca\u4fee\u6b63": "EXPLANATION_REVISION",
+      "\u5176\u4ed6": "OTHER"
+    }
+  },
+  "allowed": {
+    "record_trigger": {
+      "DECISION": [
+        "IDLE",
+        "NEXT",
+        "HELP"
+      ],
+      "OPERATION": [
+        "DWELL",
+        "HELP_OP",
+        "SCAFFOLD_OP",
+        "REMINDER"
+      ],
+      "QUESTION": [
+        "ASK"
+      ]
+    },
+    "action": [
+      "",
+      "scaffold",
+      "probe",
+      "release",
+      "redirect"
+    ],
+    "source": [
+      "",
+      "llm",
+      "fallback",
+      "local",
+      "unknown"
+    ]
+  },
+  "scope": {
+    "excluded_groups": {
+      "A": [
+        12
+      ]
+    },
+    "excluded_group_reason": "teacher_test_group",
+    "window_reason": "outside_session_window"
+  },
+  "pairing": {
+    "idle": {
+      "exchange_trigger": "IDLE",
+      "decision_trigger": "IDLE",
+      "operation_trigger": "DWELL",
+      "min_offset_s": 0,
+      "max_offset_s": 30
+    },
+    "help": {
+      "exchange_trigger": "HELP",
+      "decision_trigger": "HELP",
+      "operation_trigger": "HELP_OP",
+      "min_offset_s": -30,
+      "max_offset_s": 5
+    }
+  },
+  "initiator": {
+    "IDLE": "timer",
+    "NEXT": "student",
+    "HELP": "student",
+    "ASK": "student",
+    "UPTAKE": "student",
+    "REMINDER": "system"
+  },
+  "coding": {
+    "rules": [
+      {
+        "trigger": "IDLE",
+        "agent_action": "scaffold",
+        "off_topic": "",
+        "code": "IDLE_SCAFFOLD"
+      },
+      {
+        "trigger": "IDLE",
+        "agent_action": "probe",
+        "off_topic": "",
+        "code": "IDLE_PROBE"
+      },
+      {
+        "trigger": "IDLE",
+        "agent_action": "release",
+        "off_topic": "",
+        "code": "IDLE_RELEASE"
+      },
+      {
+        "trigger": "IDLE",
+        "agent_action": "redirect",
+        "off_topic": "",
+        "code": "IDLE_REDIRECT"
+      },
+      {
+        "trigger": "IDLE",
+        "agent_action": "none",
+        "off_topic": "",
+        "code": "IDLE_UNANSWERED"
+      },
+      {
+        "trigger": "NEXT",
+        "agent_action": "scaffold",
+        "off_topic": "",
+        "code": "NEXT_SCAFFOLD"
+      },
+      {
+        "trigger": "NEXT",
+        "agent_action": "probe",
+        "off_topic": "",
+        "code": "NEXT_PROBE"
+      },
+      {
+        "trigger": "NEXT",
+        "agent_action": "release",
+        "off_topic": "",
+        "code": "NEXT_RELEASE"
+      },
+      {
+        "trigger": "NEXT",
+        "agent_action": "redirect",
+        "off_topic": "",
+        "code": "NEXT_REDIRECT"
+      },
+      {
+        "trigger": "NEXT",
+        "agent_action": "none",
+        "off_topic": "",
+        "code": "NEXT_UNANSWERED"
+      },
+      {
+        "trigger": "HELP",
+        "agent_action": "scaffold",
+        "off_topic": "",
+        "code": "HELP_SCAFFOLD"
+      },
+      {
+        "trigger": "HELP",
+        "agent_action": "probe",
+        "off_topic": "",
+        "code": "HELP_PROBE"
+      },
+      {
+        "trigger": "HELP",
+        "agent_action": "release",
+        "off_topic": "",
+        "code": "HELP_RELEASE"
+      },
+      {
+        "trigger": "HELP",
+        "agent_action": "redirect",
+        "off_topic": "",
+        "code": "HELP_REDIRECT"
+      },
+      {
+        "trigger": "HELP",
+        "agent_action": "none",
+        "off_topic": "",
+        "code": "HELP_UNANSWERED"
+      },
+      {
+        "trigger": "ASK",
+        "agent_action": "reply",
+        "off_topic": "no",
+        "code": "ASK_ON"
+      },
+      {
+        "trigger": "ASK",
+        "agent_action": "reply",
+        "off_topic": "yes",
+        "code": "ASK_OFF"
+      },
+      {
+        "trigger": "UPTAKE",
+        "agent_action": "none",
+        "off_topic": "",
+        "code": "UPTAKE"
+      },
+      {
+        "trigger": "REMINDER",
+        "agent_action": "none",
+        "off_topic": "",
+        "code": "REMINDER"
+      }
+    ],
+    "pool_min_count": 8,
+    "pooled_code": "OTHER"
+  },
+  "families": {
+    "order": [
+      "IDLE",
+      "NEXT",
+      "HELP",
+      "ASK",
+      "UPTAKE",
+      "REMINDER"
+    ],
+    "of_fine_code": {
+      "IDLE_SCAFFOLD": "IDLE",
+      "IDLE_PROBE": "IDLE",
+      "IDLE_RELEASE": "IDLE",
+      "IDLE_REDIRECT": "IDLE",
+      "IDLE_UNANSWERED": "IDLE",
+      "NEXT_SCAFFOLD": "NEXT",
+      "NEXT_PROBE": "NEXT",
+      "NEXT_RELEASE": "NEXT",
+      "NEXT_REDIRECT": "NEXT",
+      "NEXT_UNANSWERED": "NEXT",
+      "HELP_SCAFFOLD": "HELP",
+      "HELP_PROBE": "HELP",
+      "HELP_RELEASE": "HELP",
+      "HELP_REDIRECT": "HELP",
+      "HELP_UNANSWERED": "HELP",
+      "ASK_ON": "ASK",
+      "ASK_OFF": "ASK",
+      "UPTAKE": "UPTAKE",
+      "REMINDER": "REMINDER"
+    }
+  },
+  "network": {
+    "node_order": [
+      "IDLE_SCAFFOLD",
+      "IDLE_PROBE",
+      "IDLE_RELEASE",
+      "NEXT",
+      "HELP",
+      "ASK_ON",
+      "ASK_OFF",
+      "UPTAKE"
+    ],
+    "node_of_fine_code": {
+      "IDLE_SCAFFOLD": "IDLE_SCAFFOLD",
+      "IDLE_PROBE": "IDLE_PROBE",
+      "IDLE_RELEASE": "IDLE_RELEASE",
+      "IDLE_REDIRECT": "",
+      "IDLE_UNANSWERED": "",
+      "NEXT_SCAFFOLD": "NEXT",
+      "NEXT_PROBE": "NEXT",
+      "NEXT_RELEASE": "NEXT",
+      "NEXT_REDIRECT": "NEXT",
+      "NEXT_UNANSWERED": "NEXT",
+      "HELP_SCAFFOLD": "HELP",
+      "HELP_PROBE": "HELP",
+      "HELP_RELEASE": "HELP",
+      "HELP_REDIRECT": "HELP",
+      "HELP_UNANSWERED": "HELP",
+      "ASK_ON": "ASK_ON",
+      "ASK_OFF": "ASK_OFF",
+      "UPTAKE": "UPTAKE",
+      "REMINDER": ""
+    }
+  },
+  "analysis": {
+    "level": 0.95,
+    "min_leaving": 2,
+    "min_groups": 8,
+    "rapid_repeat_s": 5,
+    "tie_orderings": 500,
+    "focal_transitions": [
+      [
+        "IDLE",
+        "IDLE"
+      ],
+      [
+        "HELP",
+        "HELP"
+      ],
+      [
+        "ASK",
+        "ASK"
+      ],
+      [
+        "NEXT",
+        "NEXT"
+      ],
+      [
+        "IDLE",
+        "HELP"
+      ],
+      [
+        "IDLE",
+        "NEXT"
+      ],
+      [
+        "HELP",
+        "UPTAKE"
+      ],
+      [
+        "UPTAKE",
+        "NEXT"
+      ]
+    ]
+  },
+  "simulation": {
+    "replications": 2000,
+    "resamples": 1999,
+    "permutations": 4999,
+    "batch": 50,
+    "truth_groups": 400000,
+    "truth_datasets": 50000,
+    "controlled": {
+      "codes": [
+        6,
+        13
+      ],
+      "groups": [
+        8,
+        12,
+        23,
+        40,
+        80
+      ],
+      "concentration": {
+        "none": null,
+        "moderate": 30,
+        "high": 8
+      },
+      "length_profiles": [
+        "equal",
+        "skewed",
+        "extreme"
+      ],
+      "excess": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "rate_ratio": 0.7,
+      "target": [
+        1,
+        2
+      ],
+      "median_length": 24,
+      "log_sd": 0.5,
+      "min_length": 6,
+      "extreme_length": 144
+    },
+    "calibrated": {
+      "smoothing": 0.5,
+      "concentration": {
+        "none": null,
+        "moderate": 30,
+        "high": 8
+      }
+    },
+    "network": {
+      "groups": [
+        8,
+        12,
+        23,
+        40,
+        80
+      ],
+      "group_sd": {
+        "none": 0.0,
+        "moderate": 0.5,
+        "high": 1.0
+      },
+      "segments": [
+        3,
+        7
+      ],
+      "baseline": [
+        0.7,
+        0.15
+      ],
+      "shift": 1.0,
+      "shift_nodes": 3
+    }
+  },
+  "decision": {
+    "coverage": [
+      0.925,
+      0.975
+    ],
+    "false_positive": [
+      0.025,
+      0.075
+    ]
+  },
+  "extension": {
+    "seed": 20261124,
+    "replications": 2000,
+    "resamples": 1999,
+    "permutations": 4999,
+    "batch": 50,
+    "truth_groups": 400000,
+    "truth_datasets": 50000,
+    "opposing": {
+      "magnitude": 0.1
+    }
+  },
+  "dominance": {
+    "seed": 20261125,
+    "replications": 2000,
+    "resamples": 1999,
+    "permutations": 4999,
+    "batch": 50,
+    "truth_groups": 400000,
+    "groups": [
+      8,
+      12,
+      23,
+      40
+    ],
+    "excess": [
+      0.0,
+      0.1
+    ],
+    "levels": [
+      "none",
+      "rates",
+      "rates_dependence"
+    ],
+    "target_rate": 0.35,
+    "dominant_excess": 0.3
+  },
+  "application": {
+    "resamples": 9999,
+    "permutations": 9999
+  }
+}

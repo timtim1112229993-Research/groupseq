@@ -1,0 +1,321 @@
+{
+  "column_map": {
+    "agent_all": [
+      {
+        "name": "record_type",
+        "raw": "\u8bb0\u5f55\u7c7b\u578b"
+      },
+      {
+        "name": "time",
+        "raw": "\u65f6\u95f4"
+      },
+      {
+        "name": "group",
+        "raw": "\u7ec4\u53f7"
+      },
+      {
+        "name": "group_name",
+        "raw": "\u7ec4\u540d"
+      },
+      {
+        "name": "stage",
+        "raw": "\u9636\u6bb5"
+      },
+      {
+        "name": "trigger",
+        "raw": "\u89e6\u53d1/\u4e8b\u4ef6"
+      },
+      {
+        "name": "action",
+        "raw": "\u52a8\u4f5c"
+      },
+      {
+        "name": "question",
+        "raw": "\u5b66\u751f\u95ee\u9898"
+      },
+      {
+        "name": "reply",
+        "raw": "\u5c0f\u63a2\u56de\u590d"
+      },
+      {
+        "name": "off_topic",
+        "raw": "\u662f\u5426\u504f\u9898"
+      },
+      {
+        "name": "source",
+        "raw": "\u6765\u6e90"
+      },
+      {
+        "name": "message",
+        "raw": "\u6d88\u606f"
+      },
+      {
+        "name": "note",
+        "raw": "\u8865\u5145\u8bf4\u660e"
+      }
+    ],
+    "agent_logs": [
+      {
+        "name": "time",
+        "raw": "\u65f6\u95f4"
+      },
+      {
+        "name": "group",
+        "raw": "\u7ec4\u53f7"
+      },
+      {
+        "name": "group_name",
+        "raw": "\u7ec4\u540d"
+      },
+      {
+        "name": "stage",
+        "raw": "\u9636\u6bb5"
+      },
+      {
+        "name": "trigger",
+        "raw": "\u89e6\u53d1\u65b9\u5f0f"
+      },
+      {
+        "name": "action",
+        "raw": "\u52a8\u4f5c"
+      },
+      {
+        "name": "source",
+        "raw": "\u6765\u6e90"
+      },
+      {
+        "name": "help_count",
+        "raw": "\u6c42\u52a9\u6b21\u6570"
+      },
+      {
+        "name": "items_done",
+        "raw": "\u5b8c\u6210\u9879"
+      },
+      {
+        "name": "items_total",
+        "raw": "\u603b\u9879"
+      },
+      {
+        "name": "message",
+        "raw": "\u6d88\u606f"
+      },
+      {
+        "name": "diagnosis",
+        "raw": "\u8bca\u65ad"
+      }
+    ],
+    "groups": [
+      {
+        "name": "group",
+        "raw": "\u7ec4\u53f7"
+      },
+      {
+        "name": "group_name",
+        "raw": "\u7ec4\u540d"
+      },
+      {
+        "name": "current_stage",
+        "raw": "\u5f53\u524d\u9636\u6bb5"
+      },
+      {
+        "name": "stages_completed",
+        "raw": "\u5b8c\u6210\u9636\u6bb5\u6570"
+      },
+      {
+        "name": "mean_completion_pct",
+        "raw": "\u5e73\u5747\u5b8c\u6210\u7387"
+      },
+      {
+        "name": "help_clicks",
+        "raw": "\u5c0f\u63a2\u6c42\u52a9"
+      },
+      {
+        "name": "quiz_errors",
+        "raw": "\u7b54\u9519\u6b21\u6570"
+      },
+      {
+        "name": "evidence_completeness",
+        "raw": "\u8bc1\u636e\u5b8c\u6574\u5ea6"
+      },
+      {
+        "name": "risk_flag",
+        "raw": "\u98ce\u9669\u6807\u7b7e"
+      }
+    ],
+    "inherited_events": [
+      {
+        "name": "event_id",
+        "raw": "\u4e8b\u4ef6ID"
+      },
+      {
+        "name": "class_label",
+        "raw": "\u8bfe\u6b21"
+      },
+      {
+        "name": "group",
+        "raw": "\u7ec4\u53f7"
+      },
+      {
+        "name": "time",
+        "raw": "\u65f6\u95f4"
+      },
+      {
+        "name": "initiator",
+        "raw": "\u53d1\u8d77\u4e3b\u4f53"
+      },
+      {
+        "name": "target",
+        "raw": "\u5bf9\u8c61\u4e3b\u4f53"
+      },
+      {
+        "name": "relation",
+        "raw": "\u5173\u7cfb"
+      },
+      {
+        "name": "knowledge_object",
+        "raw": "\u77e5\u8bc6\u5bf9\u8c61"
+      },
+      {
+        "name": "stage",
+        "raw": "\u63a2\u7a76\u9636\u6bb5"
+      },
+      {
+        "name": "function",
+        "raw": "\u4e92\u52a8\u529f\u80fd"
+      },
+      {
+        "name": "cognition",
+        "raw": "\u8ba4\u77e5\u7ed3\u679c"
+      },
+      {
+        "name": "trigger",
+        "raw": "\u89e6\u53d1"
+      },
+      {
+        "name": "action_raw",
+        "raw": "\u52a8\u4f5c\u539f\u7801"
+      },
+      {
+        "name": "action_code",
+        "raw": "\u884c\u52a8\u7801"
+      }
+    ],
+    "process": [
+      {
+        "name": "group",
+        "raw": "\u7ec4\u53f7"
+      },
+      {
+        "name": "group_name",
+        "raw": "\u7ec4\u540d"
+      },
+      {
+        "name": "stage",
+        "raw": "\u9636\u6bb5"
+      },
+      {
+        "name": "stage_name",
+        "raw": "\u9636\u6bb5\u540d\u79f0"
+      },
+      {
+        "name": "stage_complete",
+        "raw": "\u662f\u5426\u5b8c\u6210"
+      },
+      {
+        "name": "completion_pct",
+        "raw": "\u5b8c\u6210\u7387"
+      },
+      {
+        "name": "field",
+        "raw": "\u5b57\u6bb5"
+      },
+      {
+        "name": "content",
+        "raw": "\u5185\u5bb9"
+      },
+      {
+        "name": "updated",
+        "raw": "\u6700\u540e\u66f4\u65b0"
+      }
+    ],
+    "quiz_wrong": [
+      {
+        "name": "time",
+        "raw": "\u65f6\u95f4"
+      },
+      {
+        "name": "group",
+        "raw": "\u7ec4\u53f7"
+      },
+      {
+        "name": "group_name",
+        "raw": "\u7ec4\u540d"
+      },
+      {
+        "name": "stage",
+        "raw": "\u9636\u6bb5"
+      },
+      {
+        "name": "block",
+        "raw": "\u677f\u5757"
+      },
+      {
+        "name": "crop",
+        "raw": "\u4f5c\u7269"
+      },
+      {
+        "name": "item",
+        "raw": "\u9898\u76ee"
+      },
+      {
+        "name": "field",
+        "raw": "\u5b57\u6bb5"
+      },
+      {
+        "name": "answer",
+        "raw": "\u5b66\u751f\u7b54\u6848"
+      },
+      {
+        "name": "correct",
+        "raw": "\u6b63\u786e\u7b54\u6848"
+      }
+    ]
+  },
+  "value_map": {
+    "inherited_code": {
+      "\u4e3b\u52a8\u63d0\u95ee": "ACTIVE_QUESTION",
+      "\u5176\u4ed6": "OTHER",
+      "\u63d0\u793a": "PROMPT",
+      "\u63d0\u793a\u540e\u56de\u5e94": "POST_PROMPT_RESPONSE",
+      "\u652f\u67b6\u64a4\u9664": "SCAFFOLD_RELEASE",
+      "\u667a\u80fd\u4f53\u8ffd\u95ee": "AGENT_PROBE",
+      "\u6c42\u52a9": "HELP",
+      "\u7a0b\u5e8f\u6267\u884c": "PROCEDURE",
+      "\u89e3\u91ca\u4fee\u6b63": "EXPLANATION_REVISION",
+      "\u8bc1\u636e\u6bd4\u8f83": "EVIDENCE_COMPARISON"
+    },
+    "record_type": {
+      "\u5b66\u751f\u63d0\u95ee": "QUESTION",
+      "\u5c0f\u63a2\u51b3\u7b56": "DECISION",
+      "\u884c\u4e3a\u64cd\u4f5c": "OPERATION"
+    },
+    "risk_flag": {
+      "\u8bc1\u636e\u4e0d\u8db3": "insufficient_evidence",
+      "\u9891\u7e41\u6c42\u52a9": "frequent_help"
+    },
+    "trigger": {
+      "help_click": "HELP",
+      "idle": "IDLE",
+      "next_click": "NEXT",
+      "\u505c\u7559\u89e6\u53d1": "DWELL",
+      "\u63d0\u95ee": "ASK",
+      "\u70b9\u51fb\u6c42\u52a9": "HELP_OP",
+      "\u811a\u624b\u67b6\u64cd\u4f5c": "SCAFFOLD_OP",
+      "\u81ea\u52a8\u63d0\u9192": "REMINDER"
+    },
+    "yes_no": {
+      "\u5426": "no",
+      "\u662f": "yes"
+    }
+  }
+}

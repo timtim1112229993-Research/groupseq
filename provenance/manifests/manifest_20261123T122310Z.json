@@ -1,0 +1,148 @@
+{
+  "code_state": {
+    "digest": "2e7ace00cd4c3af599ee471e8111b1cade5cedac9c2f5517de719297cb90aa79",
+    "files": {
+      "config/pipeline.json": "71c6257ad4b96abeda1cc7d3057f1401489eba0595eb5f33abc113bc5e93d2c9",
+      "run_extension.py": "31eced21ad8ef4dd0c82dd75cf91f8c3409f5db2981d48eca721e7c1de577b24",
+      "run_simulation.py": "ae2591d5c86c9c3b17e35e8f03e04aa19a6c032ab7a2716fca5f737ead38056c",
+      "run_stage.py": "b12365be8e0c71d37a884ccc06f2c2c212fa95d3ba165886951b40a6048a0c9b",
+      "src/groupseq/__init__.py": "ce96d59b05983d08545d1ecc80b8047aa9d05f488cd0341efeb14d55df0fc982",
+      "src/groupseq/application.py": "1cb6489c55ba37e953c097d2b18ebc2f85dd9bc14c2adf582c74fc377f3a9d4d",
+      "src/groupseq/coding.py": "89d07ad670248a0a60d5efda24c01593f5eb14e20aca15fdcd28d8562414c817",
+      "src/groupseq/config.py": "cb4018ba9fb78d539264b00031c632725f30a2a32f79b0398989322486ee9163",
+      "src/groupseq/extension.py": "166363987dc1cdb6277feb61aa187b7122532cc855e01db01eb9c88899966ce2",
+      "src/groupseq/extension_summary.py": "76784fd592a7ea5e4e68e18f3e887a872702f100f7a08b9ac93c1a501a4bc80e",
+      "src/groupseq/generate.py": "361e8435ae60275445f8d55a340cdccfd3936b2bdf3031eebc449e7235fe565f",
+      "src/groupseq/inference.py": "746144439216ad678e4cfa1e7de75e2c38395ceb0ab3bde10171df81bee393c4",
+      "src/groupseq/ingest.py": "7007fc7b84d7bf9c5b6d470b34715994dbb1e68f984f674874a485513e5e8c59",
+      "src/groupseq/network.py": "260b274810791b6c558d3827650ffecceb6a6cf687bdd5da385b0fa25ad6d2cd",
+      "src/groupseq/provenance.py": "15c1d4d6c7d0ce65d1d75cbf168377961757adcc0807e2b53b17dd3b445aa2cc",
+      "src/groupseq/rebuild.py": "d145d8f32f71f0eac70b49c7ee3570e3b2ebeb671c2a2e07c956e159ac1dbc93",
+      "src/groupseq/study.py": "7c779afa1dab5cd6d61933a88161fdb8515b6505df6b6ebb72cbc8514eb3c226",
+      "src/groupseq/summary.py": "a42c36f06af891bd4014b8f687be9d3af1680db46c585e06ebd1658a3c681b4c",
+      "src/groupseq/tables.py": "ceeb21c291da60876d2578528b7fd859ba8b6c7349a821064837cfdd80020c36"
+    }
+  },
+  "command": [
+    "run_stage.py",
+    "application"
+  ],
+  "environment": {
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3"
+    },
+    "python": "3.13.9",
+    "system": "Windows"
+  },
+  "input_digests": {
+    "A/agent_all": "d63bd9ea19e84de02645bab42b9649be77eeb49a0d8064f492e280b4d0274db9",
+    "A/agent_logs": "c618a128373a7d72cd282478cebfda09c29ad93431a2805b7e32957f56e0ea78",
+    "A/groups": "bb4307914c3673cc1d249a5620f21c5f0af2c5af2df723b4f451836de93ce010",
+    "A/process": "981d99b08cc7cd5c22f5b1a1b70d1d98b204fec03e5f2d042cb90c6d864f7b8e",
+    "A/quiz_wrong": "d4e0ee6a9f0c2f531550f81f009fa6effd73cf1cbe003e3770a12db0b31802e9",
+    "A/stats": "550441813b3c1255f4175727c98a7f4154b71e9189411951dd1bfebe0893f3e7",
+    "B/agent_all": "4acea423f91da2ebce9e09b3f95d89d92a84d92124391fa56d7f431d7f775e22",
+    "B/agent_logs": "c784c1f94cc01ea8feab335350a2d2ea632f2a822a0c3b79691ef0a51b5cbef3",
+    "B/device": "bc5a429ed1579abe041dc47e1f3d5ec5d0e6992e6c3e7ec5128e098505a8359f",
+    "B/groups": "301bd7516e3ea3846b014dd0cc64aedcc31e6d4e4a4f2c719a969855f611e41a",
+    "B/process": "b5a920c42a2d4b68bcf5b7ed53b6cdd5b5fcc0d891debf2112dc86265e27b498",
+    "B/quiz_wrong": "594c4fc445d13288c8ad735ca43c0e4cd057400c869acd04508fa3004bf34fc8",
+    "B/stats": "ba83143526e5f95cf7d4376338cf476a0b6d515b1cf814142fde5172e4a1c997"
+  },
+  "output_digests": {
+    "work/05_application/application_report.json": "4d4119f60922fed95ec42c75c0b393f77437f6a4c8b3431b6d8039a687f59a31",
+    "work/05_application/family_by_group.csv": "97d6ed5137fb976a965ec57f66c8d953eeac0ac9455ed7ece2c8c590c208a9d0",
+    "work/05_application/focal_estimates.csv": "26793db0bde0c5cc954b0d253a703c39a824a4a0b6e7e6fa9cbe0503e9addc3a",
+    "work/05_application/focal_tests.csv": "59932441701c1d552edbfcf6e26f2ec574b6878cd737a58379012c5f80f538b1",
+    "work/05_application/matrix_exploratory.csv": "25defaa615bf8612108e8ac67d54b64571a20f682856de3a0424c980614896e6",
+    "work/05_application/network_edges.csv": "b85d2d0346323ac9ddcf5cf090185e9ad1b4780bfc1efe7163d70918d786a831",
+    "work/05_application/network_nodes.csv": "524b19edf2bed5d0acf3820ad076e952ffd556276dcdcc367d41b10c0aea5993",
+    "work/05_application/network_tests.csv": "c79748cb7c9a870cf48bb99a74c0169248bb60d7f1d96dfef1a05cde1583c5d5",
+    "work/05_application/tie_sensitivity.csv": "9afac4eeb5fa75ef0fd685e4806694e3d75990000d6f17a13b07b9514981ffa1",
+    "work/05_application/transition_counts.csv": "09b6cbb190b6b8e65b482d2083817a7f2bb7ba0ca7aa7f01d150c61eff98eacb",
+    "work/05_application/variant_sizes.csv": "31436315e3db0708c575ba4d03df95f2011dce85fed300acdfb755444cf9ae35"
+  },
+  "parameters": {
+    "analysis": {
+      "focal_transitions": [
+        [
+          "IDLE",
+          "IDLE"
+        ],
+        [
+          "HELP",
+          "HELP"
+        ],
+        [
+          "ASK",
+          "ASK"
+        ],
+        [
+          "NEXT",
+          "NEXT"
+        ],
+        [
+          "IDLE",
+          "HELP"
+        ],
+        [
+          "IDLE",
+          "NEXT"
+        ],
+        [
+          "HELP",
+          "UPTAKE"
+        ],
+        [
+          "UPTAKE",
+          "NEXT"
+        ]
+      ],
+      "level": 0.95,
+      "min_groups": 8,
+      "min_leaving": 2,
+      "rapid_repeat_s": 5,
+      "tie_orderings": 500
+    },
+    "application": {
+      "permutations": 9999,
+      "resamples": 9999
+    },
+    "pairing": {
+      "help": {
+        "decision_trigger": "HELP",
+        "exchange_trigger": "HELP",
+        "max_offset_s": 5,
+        "min_offset_s": -30,
+        "operation_trigger": "HELP_OP"
+      },
+      "idle": {
+        "decision_trigger": "IDLE",
+        "exchange_trigger": "IDLE",
+        "max_offset_s": 30,
+        "min_offset_s": 0,
+        "operation_trigger": "DWELL"
+      }
+    },
+    "pool_min_count": 8,
+    "pooled_code": "OTHER",
+    "scope": {
+      "excluded_group_reason": "teacher_test_group",
+      "excluded_groups": {
+        "A": [
+          12
+        ]
+      },
+      "window_reason": "outside_session_window"
+    },
+    "timezone_offset_hours": 8
+  },
+  "run_started_utc": "2026-11-23T12:23:10Z",
+  "seed": 20261123,
+  "stages": [
+    "application"
+  ]
+}

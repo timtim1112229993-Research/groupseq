@@ -1,0 +1,108 @@
+{
+  "code_state": {
+    "digest": "714fbc77b0ad6f79071fd47a6ff8e73bde5b30e5f4cd40231dc197b4a9285c3b",
+    "files": {
+      "config/pipeline.json": "0c4733d265c94b9cdcb582b675db8db6d228e0578194a647c9a1fdf2176719ef",
+      "run_simulation.py": "ae2591d5c86c9c3b17e35e8f03e04aa19a6c032ab7a2716fca5f737ead38056c",
+      "run_stage.py": "5a7384aa6655f62478a5b45ca3534ef77cf242962b3e64d537c0135c2fafde38",
+      "src/groupseq/__init__.py": "ce96d59b05983d08545d1ecc80b8047aa9d05f488cd0341efeb14d55df0fc982",
+      "src/groupseq/coding.py": "89d07ad670248a0a60d5efda24c01593f5eb14e20aca15fdcd28d8562414c817",
+      "src/groupseq/config.py": "97f7900c094988639b735b36c323de35ce57777d03ec8ae832e4b656987d86fb",
+      "src/groupseq/generate.py": "361e8435ae60275445f8d55a340cdccfd3936b2bdf3031eebc449e7235fe565f",
+      "src/groupseq/inference.py": "746144439216ad678e4cfa1e7de75e2c38395ceb0ab3bde10171df81bee393c4",
+      "src/groupseq/ingest.py": "7007fc7b84d7bf9c5b6d470b34715994dbb1e68f984f674874a485513e5e8c59",
+      "src/groupseq/network.py": "260b274810791b6c558d3827650ffecceb6a6cf687bdd5da385b0fa25ad6d2cd",
+      "src/groupseq/provenance.py": "39b68b238e381cbb60f9c0c5303d46812117db6c8d1b83f3ea234caad8fb6f74",
+      "src/groupseq/rebuild.py": "d145d8f32f71f0eac70b49c7ee3570e3b2ebeb671c2a2e07c956e159ac1dbc93",
+      "src/groupseq/study.py": "7c779afa1dab5cd6d61933a88161fdb8515b6505df6b6ebb72cbc8514eb3c226",
+      "src/groupseq/summary.py": "a42c36f06af891bd4014b8f687be9d3af1680db46c585e06ebd1658a3c681b4c",
+      "src/groupseq/tables.py": "ceeb21c291da60876d2578528b7fd859ba8b6c7349a821064837cfdd80020c36"
+    }
+  },
+  "command": [
+    "run_stage.py",
+    "summary"
+  ],
+  "environment": {
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3"
+    },
+    "python": "3.13.9",
+    "system": "Windows"
+  },
+  "input_digests": {
+    "A/agent_all": "d63bd9ea19e84de02645bab42b9649be77eeb49a0d8064f492e280b4d0274db9",
+    "A/agent_logs": "c618a128373a7d72cd282478cebfda09c29ad93431a2805b7e32957f56e0ea78",
+    "A/groups": "bb4307914c3673cc1d249a5620f21c5f0af2c5af2df723b4f451836de93ce010",
+    "A/process": "981d99b08cc7cd5c22f5b1a1b70d1d98b204fec03e5f2d042cb90c6d864f7b8e",
+    "A/quiz_wrong": "d4e0ee6a9f0c2f531550f81f009fa6effd73cf1cbe003e3770a12db0b31802e9",
+    "A/stats": "550441813b3c1255f4175727c98a7f4154b71e9189411951dd1bfebe0893f3e7",
+    "B/agent_all": "4acea423f91da2ebce9e09b3f95d89d92a84d92124391fa56d7f431d7f775e22",
+    "B/agent_logs": "c784c1f94cc01ea8feab335350a2d2ea632f2a822a0c3b79691ef0a51b5cbef3",
+    "B/device": "bc5a429ed1579abe041dc47e1f3d5ec5d0e6992e6c3e7ec5128e098505a8359f",
+    "B/groups": "301bd7516e3ea3846b014dd0cc64aedcc31e6d4e4a4f2c719a969855f611e41a",
+    "B/process": "b5a920c42a2d4b68bcf5b7ed53b6cdd5b5fcc0d891debf2112dc86265e27b498",
+    "B/quiz_wrong": "594c4fc445d13288c8ad735ca43c0e4cd057400c869acd04508fa3004bf34fc8",
+    "B/stats": "ba83143526e5f95cf7d4376338cf476a0b6d515b1cf814142fde5172e4a1c997"
+  },
+  "output_digests": {
+    "work/04_simulation/summary/calibrated_by_target.csv": "e61805c312dcf9d0696cbfcf92c3867f8d768c4f97dc91b93afd3c0e729f0f08",
+    "work/04_simulation/summary/calibrated_counts.csv": "855bc947b0516c32d850c462f845015b58fc547bdea7179de1527ab246344b7c",
+    "work/04_simulation/summary/calibrated_estimates.csv": "22694e7bc31b54967c7d378b7e0228d6f47d11320e49c801729b8e53efbbcbee",
+    "work/04_simulation/summary/controlled_estimates.csv": "7aa4724425e567daa92ce62c95963727f5a010ba87c90f42b21def5f231d2ebc",
+    "work/04_simulation/summary/network_by_cell.csv": "a22cede77151c67d087ec3433a256240085646fc6abe9d32db3fbdb3087d65f7",
+    "work/04_simulation/summary/network_counts.csv": "f6d95675721bfa37ad46e8d1c554fb693905081e550bd5811f547a06ed339c6d",
+    "work/04_simulation/summary/procedure_ranking.csv": "77beaf05de0de1bb11ad58b85f33145f2473b3b64ad1472bf058ecf5d4e67476",
+    "work/04_simulation/summary/summary_report.json": "35c59b8744ae0d611acc7ffcdf3cc358682b402a8f9ba020feab91a2c0fefc31",
+    "work/04_simulation/summary/validity_by_cell.csv": "0e9f76e1cda257410773903e6b1e0adaf8d40459f1923d4c01b8d0b64ebcab25",
+    "work/04_simulation/summary/validity_counts.csv": "4dcd9fcea959286781b9d502a9292ee47dac832e94275c2fc36aed1f44e7f647"
+  },
+  "parameters": {
+    "decision": {
+      "coverage": [
+        0.925,
+        0.975
+      ],
+      "false_positive": [
+        0.025,
+        0.075
+      ]
+    },
+    "pairing": {
+      "help": {
+        "decision_trigger": "HELP",
+        "exchange_trigger": "HELP",
+        "max_offset_s": 5,
+        "min_offset_s": -30,
+        "operation_trigger": "HELP_OP"
+      },
+      "idle": {
+        "decision_trigger": "IDLE",
+        "exchange_trigger": "IDLE",
+        "max_offset_s": 30,
+        "min_offset_s": 0,
+        "operation_trigger": "DWELL"
+      }
+    },
+    "pool_min_count": 8,
+    "pooled_code": "OTHER",
+    "scope": {
+      "excluded_group_reason": "teacher_test_group",
+      "excluded_groups": {
+        "A": [
+          12
+        ]
+      },
+      "window_reason": "outside_session_window"
+    },
+    "timezone_offset_hours": 8
+  },
+  "run_started_utc": "2026-11-23T11:27:48Z",
+  "seed": 20261123,
+  "stages": [
+    "summary"
+  ]
+}

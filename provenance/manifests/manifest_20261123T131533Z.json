@@ -1,0 +1,100 @@
+{
+  "code_state": {
+    "digest": "b3688000cf6707a42f86047d70c380346a61a58d2dff05aaae180212917078aa",
+    "files": {
+      "config/pipeline.json": "cdd0b735d9c7d5bd1114557367fbbb0166a915fbb2434fed01eb78e7c579974f",
+      "run_dominance.py": "7b2e19fe4f6801119ac415a670e7a2d878b755ab692514163581b74b441b81cc",
+      "run_extension.py": "31eced21ad8ef4dd0c82dd75cf91f8c3409f5db2981d48eca721e7c1de577b24",
+      "run_simulation.py": "ae2591d5c86c9c3b17e35e8f03e04aa19a6c032ab7a2716fca5f737ead38056c",
+      "run_stage.py": "c3f65e389875111e6c7179c917d5fbb1b5f73aa67aa401ff4ddf39115bea3f25",
+      "src/groupseq/__init__.py": "ce96d59b05983d08545d1ecc80b8047aa9d05f488cd0341efeb14d55df0fc982",
+      "src/groupseq/application.py": "48b0e9b766fa090f15915e272e3fc72ffa1f4204bfbb1cfce551ae4aa16488f4",
+      "src/groupseq/coding.py": "89d07ad670248a0a60d5efda24c01593f5eb14e20aca15fdcd28d8562414c817",
+      "src/groupseq/config.py": "972f42bf75750ae6fc7bea2daa0d5112ebf878af965e4881859b412dfb5e66e2",
+      "src/groupseq/dominance.py": "833019d0376b8e569131c9215b3f90b94b229828d17369aa0096d9b780bacf2f",
+      "src/groupseq/dominance_summary.py": "ea5a0520ea05a9101f8fe0c438fe4523f368b103898505015e3f72d836bb39d5",
+      "src/groupseq/extension.py": "166363987dc1cdb6277feb61aa187b7122532cc855e01db01eb9c88899966ce2",
+      "src/groupseq/extension_summary.py": "76784fd592a7ea5e4e68e18f3e887a872702f100f7a08b9ac93c1a501a4bc80e",
+      "src/groupseq/generate.py": "361e8435ae60275445f8d55a340cdccfd3936b2bdf3031eebc449e7235fe565f",
+      "src/groupseq/inference.py": "746144439216ad678e4cfa1e7de75e2c38395ceb0ab3bde10171df81bee393c4",
+      "src/groupseq/ingest.py": "7007fc7b84d7bf9c5b6d470b34715994dbb1e68f984f674874a485513e5e8c59",
+      "src/groupseq/network.py": "260b274810791b6c558d3827650ffecceb6a6cf687bdd5da385b0fa25ad6d2cd",
+      "src/groupseq/provenance.py": "15c1d4d6c7d0ce65d1d75cbf168377961757adcc0807e2b53b17dd3b445aa2cc",
+      "src/groupseq/rebuild.py": "d145d8f32f71f0eac70b49c7ee3570e3b2ebeb671c2a2e07c956e159ac1dbc93",
+      "src/groupseq/snapshot.py": "123135fd3984970c1ac0aabf92bbdbb5e5d72c708efead4ef48347c3d36b9cd5",
+      "src/groupseq/study.py": "7c779afa1dab5cd6d61933a88161fdb8515b6505df6b6ebb72cbc8514eb3c226",
+      "src/groupseq/summary.py": "a42c36f06af891bd4014b8f687be9d3af1680db46c585e06ebd1658a3c681b4c",
+      "src/groupseq/tables.py": "ceeb21c291da60876d2578528b7fd859ba8b6c7349a821064837cfdd80020c36"
+    }
+  },
+  "command": [
+    "run_stage.py",
+    "snapshot",
+    "--quiet"
+  ],
+  "environment": {
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3"
+    },
+    "python": "3.13.9",
+    "system": "Windows"
+  },
+  "input_digests": {
+    "A/agent_all": "d63bd9ea19e84de02645bab42b9649be77eeb49a0d8064f492e280b4d0274db9",
+    "A/agent_logs": "c618a128373a7d72cd282478cebfda09c29ad93431a2805b7e32957f56e0ea78",
+    "A/groups": "bb4307914c3673cc1d249a5620f21c5f0af2c5af2df723b4f451836de93ce010",
+    "A/process": "981d99b08cc7cd5c22f5b1a1b70d1d98b204fec03e5f2d042cb90c6d864f7b8e",
+    "A/quiz_wrong": "d4e0ee6a9f0c2f531550f81f009fa6effd73cf1cbe003e3770a12db0b31802e9",
+    "A/stats": "550441813b3c1255f4175727c98a7f4154b71e9189411951dd1bfebe0893f3e7",
+    "B/agent_all": "4acea423f91da2ebce9e09b3f95d89d92a84d92124391fa56d7f431d7f775e22",
+    "B/agent_logs": "c784c1f94cc01ea8feab335350a2d2ea632f2a822a0c3b79691ef0a51b5cbef3",
+    "B/device": "bc5a429ed1579abe041dc47e1f3d5ec5d0e6992e6c3e7ec5128e098505a8359f",
+    "B/groups": "301bd7516e3ea3846b014dd0cc64aedcc31e6d4e4a4f2c719a969855f611e41a",
+    "B/process": "b5a920c42a2d4b68bcf5b7ed53b6cdd5b5fcc0d891debf2112dc86265e27b498",
+    "B/quiz_wrong": "594c4fc445d13288c8ad735ca43c0e4cd057400c869acd04508fa3004bf34fc8",
+    "B/stats": "ba83143526e5f95cf7d4376338cf476a0b6d515b1cf814142fde5172e4a1c997"
+  },
+  "output_digests": {
+    "work/06_snapshot/results_snapshot.json": "0e54b397eaf757edc78e19fa3d0446dc874f86e2c691d0ad29258847408b1859",
+    "work/06_snapshot/results_snapshot.md": "6bbe3f779b427c5559af3df796a61f93739662728075adf7caeba8eb40f327a7",
+    "work/06_snapshot/snapshot_report.json": "ace9d7e4682ee12bb167c7b981f0e1ea19ff8fd38847b16b58db9265ad720936"
+  },
+  "parameters": {
+    "pairing": {
+      "help": {
+        "decision_trigger": "HELP",
+        "exchange_trigger": "HELP",
+        "max_offset_s": 5,
+        "min_offset_s": -30,
+        "operation_trigger": "HELP_OP"
+      },
+      "idle": {
+        "decision_trigger": "IDLE",
+        "exchange_trigger": "IDLE",
+        "max_offset_s": 30,
+        "min_offset_s": 0,
+        "operation_trigger": "DWELL"
+      }
+    },
+    "pool_min_count": 8,
+    "pooled_code": "OTHER",
+    "scope": {
+      "excluded_group_reason": "teacher_test_group",
+      "excluded_groups": {
+        "A": [
+          12
+        ]
+      },
+      "window_reason": "outside_session_window"
+    },
+    "timezone_offset_hours": 8
+  },
+  "run_started_utc": "2026-11-23T13:15:33Z",
+  "seed": 20261123,
+  "stages": [
+    "snapshot"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "code_state": {
+    "digest": "57abb1e9e95c3659e461be68563a7a2f0b6c59d12eb2de811aed147be27adedd",
+    "files": {
+      "config/pipeline.json": "038689f7539bc15f526bcd41e60235b0bacc223e0c179366c047925749be823b",
+      "run_simulation.py": "ae2591d5c86c9c3b17e35e8f03e04aa19a6c032ab7a2716fca5f737ead38056c",
+      "run_stage.py": "ebfd0bbbc8c8ad5fadcdc447f2578c78787928f8f594823f565d9227cc5c1867",
+      "src/groupseq/__init__.py": "ce96d59b05983d08545d1ecc80b8047aa9d05f488cd0341efeb14d55df0fc982",
+      "src/groupseq/coding.py": "89d07ad670248a0a60d5efda24c01593f5eb14e20aca15fdcd28d8562414c817",
+      "src/groupseq/config.py": "1a030d5853fd524f65883c198f9400a8cd7ed21de8524ef21331b5e3a3368fcc",
+      "src/groupseq/generate.py": "361e8435ae60275445f8d55a340cdccfd3936b2bdf3031eebc449e7235fe565f",
+      "src/groupseq/inference.py": "746144439216ad678e4cfa1e7de75e2c38395ceb0ab3bde10171df81bee393c4",
+      "src/groupseq/ingest.py": "7007fc7b84d7bf9c5b6d470b34715994dbb1e68f984f674874a485513e5e8c59",
+      "src/groupseq/network.py": "260b274810791b6c558d3827650ffecceb6a6cf687bdd5da385b0fa25ad6d2cd",
+      "src/groupseq/provenance.py": "39b68b238e381cbb60f9c0c5303d46812117db6c8d1b83f3ea234caad8fb6f74",
+      "src/groupseq/rebuild.py": "d145d8f32f71f0eac70b49c7ee3570e3b2ebeb671c2a2e07c956e159ac1dbc93",
+      "src/groupseq/study.py": "7c779afa1dab5cd6d61933a88161fdb8515b6505df6b6ebb72cbc8514eb3c226",
+      "src/groupseq/tables.py": "ceeb21c291da60876d2578528b7fd859ba8b6c7349a821064837cfdd80020c36"
+    }
+  },
+  "command": [
+    "run_stage.py",
+    "all",
+    "--quiet"
+  ],
+  "environment": {
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3"
+    },
+    "python": "3.13.9",
+    "system": "Windows"
+  },
+  "input_digests": {
+    "A/agent_all": "d63bd9ea19e84de02645bab42b9649be77eeb49a0d8064f492e280b4d0274db9",
+    "A/agent_logs": "c618a128373a7d72cd282478cebfda09c29ad93431a2805b7e32957f56e0ea78",
+    "A/groups": "bb4307914c3673cc1d249a5620f21c5f0af2c5af2df723b4f451836de93ce010",
+    "A/process": "981d99b08cc7cd5c22f5b1a1b70d1d98b204fec03e5f2d042cb90c6d864f7b8e",
+    "A/quiz_wrong": "d4e0ee6a9f0c2f531550f81f009fa6effd73cf1cbe003e3770a12db0b31802e9",
+    "A/stats": "550441813b3c1255f4175727c98a7f4154b71e9189411951dd1bfebe0893f3e7",
+    "B/agent_all": "4acea423f91da2ebce9e09b3f95d89d92a84d92124391fa56d7f431d7f775e22",
+    "B/agent_logs": "c784c1f94cc01ea8feab335350a2d2ea632f2a822a0c3b79691ef0a51b5cbef3",
+    "B/device": "bc5a429ed1579abe041dc47e1f3d5ec5d0e6992e6c3e7ec5128e098505a8359f",
+    "B/groups": "301bd7516e3ea3846b014dd0cc64aedcc31e6d4e4a4f2c719a969855f611e41a",
+    "B/process": "b5a920c42a2d4b68bcf5b7ed53b6cdd5b5fcc0d891debf2112dc86265e27b498",
+    "B/quiz_wrong": "594c4fc445d13288c8ad735ca43c0e4cd057400c869acd04508fa3004bf34fc8",
+    "B/stats": "ba83143526e5f95cf7d4376338cf476a0b6d515b1cf814142fde5172e4a1c997"
+  },
+  "output_digests": {
+    "work/01_ingest/agent_records.csv": "9821a1968f10c2cafc41dc9735419a6a33e5fd86a8d694b677ad614bdd2957a3",
+    "work/01_ingest/decision_log.csv": "ecb0f0832cf19c66ff83bc89d34c96d8ecfd9094c20796d8f04962962d7327be",
+    "work/01_ingest/group_summary.csv": "0043cffe2a5d8dc9f3b30e4c8bfb59250654dcb2d74cef07363f80a19bc01749",
+    "work/01_ingest/ingest_report.json": "6e64bf0831fac8392e1c331d9c366a5596d3c001f4698e0d7edca227a7f85a49",
+    "work/01_ingest/quiz_errors.csv": "2efe3a87bf4d43a8fd198de2a4b0503f11671c9dc0cba266b680f4fef1f56fca",
+    "work/01_ingest/sessions.json": "d069e8cca057ac8e1d9cffa361c569e97da73c9329e101030f9b3fef330dc3c1",
+    "work/01_ingest/stage_fields.csv": "768c432db52d6c91298298be13313a4aebc958bb6b0b3d804ad914e9fd3b3bc9",
+    "work/01_ingest/stage_records.csv": "a2c738d222ec40e65db26896be98d74080f0dd446962df1fd4e83d866de56519",
+    "work/02_events/exchanges.csv": "fbace0187687d1ab60857568e9166c5a98799727d58325c43bfffe923511c2f8",
+    "work/02_events/exclusions.csv": "9bdfa84c992d6afe800069faf4dafc32b1834d27e4f6218918616e7b930852fb",
+    "work/02_events/rebuild_report.json": "ba6fa49ab0efe7399a1f45f0c970aa77cd393f8f54c549ac7aa1330ac7e714eb",
+    "work/02_events/reconciliation.csv": "b0918df00768b9ed9117cc51219f1dbe5a6f5a9fb6cc98d3a4d56d05fbb48191",
+    "work/02_events/record_links.csv": "d5e8389381a104e47b82fd725b39a5703fa692ccb03ee8ce100d19f23ab40656",
+    "work/03_coded/case_summary.csv": "f7a7bfc5c4d3b5758f686d2d45811968722985aea5cb4aff905dc20a8805fab6",
+    "work/03_coded/code_crosswalk.csv": "86ef2b0f531529d458c52cd37d7a0b6b98f221078727f5a6c62d7cf049940eac",
+    "work/03_coded/code_frequencies.csv": "786efca0d37372397c2b3a185535b20dda0b75910a56c1cbbbdfca58500a6b27",
+    "work/03_coded/codebook.json": "5523577d65d36267a5b25d6724b21555d3a85a59728a65b12fdded395d64cccc",
+    "work/03_coded/coded_events.csv": "f256d373268391eae084b5bf8a91231a6795fe8abd1e5b678d79bcf2e961e7b8",
+    "work/03_coded/coding_report.json": "a0218415813facf924d5abd46074b3e9e69d0fb466822b83eac3626a9264e325"
+  },
+  "parameters": {
+    "pairing": {
+      "help": {
+        "decision_trigger": "HELP",
+        "exchange_trigger": "HELP",
+        "max_offset_s": 5,
+        "min_offset_s": -30,
+        "operation_trigger": "HELP_OP"
+      },
+      "idle": {
+        "decision_trigger": "IDLE",
+        "exchange_trigger": "IDLE",
+        "max_offset_s": 30,
+        "min_offset_s": 0,
+        "operation_trigger": "DWELL"
+      }
+    },
+    "pool_min_count": 8,
+    "pooled_code": "OTHER",
+    "scope": {
+      "excluded_group_reason": "teacher_test_group",
+      "excluded_groups": {
+        "A": [
+          12
+        ]
+      },
+      "window_reason": "outside_session_window"
+    },
+    "timezone_offset_hours": 8
+  },
+  "run_started_utc": "2026-11-23T07:26:12Z",
+  "seed": 20261123,
+  "stages": [
+    "ingest",
+    "events",
+    "coded"
+  ]
+}
