@@ -45,8 +45,10 @@ PARAMETER_KEYS = {
 FORBIDDEN_TEXT = [
     "cur" + "sor", "co" + "pilot", "clau" + "de", "anth" + "ropic", "open" + "ai", "chat" + "gpt", "pap" + "er1",
     "pap" + "er 1", "pap" + "er 4", "pap" + "er 5", "analysis" + "_plan", "writing" + "_rules", "cluster" + "-aware",
-    "gg5" + "iag", "gn6" + "jzj",
+    "gg5" + "iag", "gn6" + "jzj", "sequences from" + " few groups",
 ]
+# The one file in which the people behind the code may be named.
+CITATION_FILE = "CITATION.cff"
 FROZEN = {
     "simulation": ["generate.py", "inference.py", "network.py", "study.py", "tables.py"],
     "extension": ["generate.py", "inference.py", "study.py", "tables.py", "extension.py"],
@@ -127,6 +129,40 @@ def plain(result: dict) -> str:
     return json.dumps(json.loads(json.dumps(kept)), sort_keys=True)
 
 
+def recorded_settings():
+    """Local settings, where the inputs found are the recorded ones; otherwise the calling test is skipped.
+
+    A copy of the code without the restricted records has no local path file,
+    or has one that points at other inputs such as the synthetic demonstration
+    files. Stored digests can be checked against neither.
+    """
+    try:
+        settings = load_settings()
+        inputs = locate_inputs(settings)
+    except (InputError, FileNotFoundError):
+        pytest.skip("the raw inputs are not available here")
+    recorded = json.loads((PIPELINE_DIR / "provenance" / "input_digests.json").read_text(encoding="ascii"))
+    if provenance.digest_inputs(inputs) != recorded:
+        pytest.skip("the inputs found here are not the recorded inputs")
+    return settings
+
+
+def named_people() -> tuple[list[str], list[str]]:
+    """Full names and identifiers stated in the citation file, in lower case."""
+    path = PIPELINE_DIR / CITATION_FILE
+    if not path.is_file():
+        return [], []
+    text = path.read_text(encoding="ascii")
+    identifiers = re.findall(r"\d{4}-\d{4}-\d{4}-\d{3}[\dX]", text)
+    names = []
+    for block in re.split(r"\n\s*- family-names:", text)[1:]:
+        family = block.splitlines()[0].strip().strip('"')
+        given = re.search(r"given-names:\s*(.+)", block.split("\n  - ")[0])
+        if given:
+            names.append(f"{given.group(1).strip().strip(chr(34))} {family}".lower())
+    return names, [value.lower() for value in identifiers]
+
+
 # ------------------------------------------------------- release boundary
 
 
@@ -196,6 +232,32 @@ def test_tracked_text_is_plain_and_names_no_manuscript_document_or_tool():
         assert found == [], f"{relative} names {found}"
 
 
+def test_people_are_named_in_the_citation_file_and_nowhere_else():
+    """Citation metadata may name the people behind the code; no other tracked file may."""
+    names, identifiers = named_people()
+    if not names and not identifiers:
+        pytest.skip("no citation file")
+    assert len(names) >= 1 and len(identifiers) >= 1
+    for relative in would_be_tracked():
+        if relative == CITATION_FILE:
+            continue
+        text = (PIPELINE_DIR / relative).read_bytes().decode("ascii").lower()
+        found = [word for word in names + identifiers if word in text]
+        assert found == [], f"{relative} names {found}"
+
+
+def test_citation_file_states_no_title_of_a_manuscript_and_no_result():
+    path = PIPELINE_DIR / CITATION_FILE
+    if not path.is_file():
+        pytest.skip("no citation file")
+    text = path.read_text(encoding="ascii")
+    keys = set(re.findall(r"^([a-z-]+):", text, flags=re.MULTILINE))
+    assert keys <= {"cff-version", "message", "type", "title", "abstract", "authors", "license", "version", "keywords",
+                    "doi", "date-released", "repository-code", "url", "identifiers"}
+    assert "preferred-citation" not in text and "references" not in keys
+    assert not re.search(r"\d\.\d", text.split("authors:")[0].replace("cff-version: 1.2.0", ""))
+
+
 def test_provenance_holds_digests_and_settings_only():
     folder = PIPELINE_DIR / "provenance"
     files = [p for p in folder.rglob("*") if p.is_file()]
@@ -244,11 +306,7 @@ def test_stored_outputs_match_the_manifests_that_describe_them():
 
 @pytest.mark.slow
 def test_data_stages_and_application_reproduce_from_the_raw_inputs(tmp_path):
-    settings = load_settings()
-    try:
-        locate_inputs(settings)
-    except (InputError, FileNotFoundError):
-        pytest.skip("the raw inputs are not available here")
+    settings = recorded_settings()
     recorded = recorded_outputs()
     scratch = dataclasses.replace(settings, work_dir=tmp_path / "work")
     checked = 0
@@ -262,7 +320,10 @@ def test_data_stages_and_application_reproduce_from_the_raw_inputs(tmp_path):
 
 @pytest.mark.slow
 def test_stored_simulation_cells_rerun_identically(pipeline_config):
-    work = load_settings().work_dir
+    try:
+        work = load_settings().work_dir
+    except FileNotFoundError:
+        pytest.skip("no local path file is present here")
     cfg = pipeline_config
 
     def stored(folder: str, arm: str, index: int) -> dict:

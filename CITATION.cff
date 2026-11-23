@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "groupseq: inference on transitions between coded events nested in few groups"
+abstract: "Source code for group-level inference on transitions between coded events, for the simulation study that compares the procedures, and for their application to exported interaction logs. No data and no result are included."
+authors:
+  - name: "timtim1112229993-Research"
+license: MIT
+version: "1.0.0"
+keywords:
+  - bootstrap
+  - permutation test
+  - transition probability
+  - clustered data
+  - simulation

@@ -1,0 +1,21 @@
+{
+  "input_root": "work/demo/input",
+  "class_folders": {
+    "A": "DEMOA",
+    "B": "DEMOB"
+  },
+  "file_patterns": {
+    "agent_all": "^export-agent-all-{code}.*\\.csv$",
+    "agent_logs": "^export-agent-logs-{code}.*\\.csv$",
+    "groups": "^export-groups-{code}.*\\.csv$",
+    "quiz_wrong": "^export-quiz-wrong-{code}.*\\.csv$",
+    "stats": "^export-{code}-stats.*\\.json$",
+    "process": "^export-{code}-(?!stats).*\\.csv$",
+    "device": "^export-data-.*\\.json$"
+  },
+  "optional_kinds": [
+    "device"
+  ],
+  "work_dir": "work/demo",
+  "provenance_dir": "work/demo/provenance"
+}
